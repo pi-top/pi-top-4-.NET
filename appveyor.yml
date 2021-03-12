@@ -1,0 +1,48 @@
+version: "1.0.{build}"
+image: Visual Studio 2019
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: "{version}"
+  package_version: "{version}"
+  assembly_version: "{version}"
+  file_version: "{version}"
+  informational_version: "{version}"
+branches:
+  only:
+    - master
+init:
+  # Good practise, because Windows line endings are different from Unix/Linux ones
+  - cmd: git config --global core.autocrlf true
+install:
+  # Install repo specific stuff here
+before_build:
+  - cmd: dotnet --version
+  - cmd: dotnet restore src/pi-top.sln --verbosity q
+build_script:
+  - cmd: dotnet build src/pi-top.sln
+after_build:
+  # For once the build has completed
+  - cmd: dotnet pack src/PiTop.MakerArchitecture.Expansion.nuget/PiTop.MakerArchitecture.Expansion.nuget.csproj -o pacakges
+  - cmd: dotnet pack src/PiTop.MakerArchitecture.Foundation.nuget/PiTop.MakerArchitecture.Foundation.nuget.csproj -o pacakges
+  - cmd: dotnet pack src/PiTop.MakerArchitecture.Foundation.Psi.nuget/PiTop.MakerArchitecture.Foundation.Psi.nuget.csproj -o pacakges
+  - cmd: dotnet pack src/PiTop.nuget/PiTop.nuget.csproj -o pacakges
+  - cmd: dotnet pack src/PiTop.Camera.Psi.nuget/PiTop.Camera.Psi.nuget.csproj -o pacakges
+  - cmd: dotnet pack src/PiTop.Camera.nuget/PiTop.Camera.nuget.csproj -o pacakges
+artifacts:
+  - path: "pacakges/**/*.nupkg"
+    name: NugetPacakges
+
+clone_depth: 1
+test_script:
+    - cmd: dotnet test src/pi-top.sln
+on_finish:
+  # any cleanup in here
+deploy:
+  - provider: NuGet
+    api_key:
+      secure: 24Oeuj2/0Xf8+RmwFnwP6Vx2sgYauPfuQWtk8+yY8zqpIC9+PHNP9heZg3rGT1bA
+    skip_symbols: false
+    artifact: /.*(\.|\.s)nupkg/
+    on:
+      branch: master
