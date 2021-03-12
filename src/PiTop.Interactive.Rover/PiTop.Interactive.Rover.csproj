@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="lobe.Http" Version="1.0.23" />
+    <PackageReference Include="lobe.ImageSharp" Version="1.0.23" />
+    <PackageReference Include="lobe.Onnx" Version="1.0.23" />
+    <PackageReference Include="pi-top" Version="1.0.385" />
+    <PackageReference Include="pi-top.Camera" Version="1.0.376" />
+    <PackageReference Include="pi-top.Camera.DotNet.Interactive" Version="1.0.0" />
+    <PackageReference Include="pi-top.DotNet.Interactive" Version="1.0.385" />
+    <PackageReference Include="pi-top.MakerArchitecture.Expansion" Version="1.0.385" />
+    <PackageReference Include="pi-top.MakerArchitecture.Expansion.DotNet.Interactive" Version="1.0.385" />
+    <PackageReference Include="pi-top.MakerArchitecture.Foundation.DotNet.Interactive" Version="1.0.385" />
+    <PackageReference Include="Serilog.Sinks.RollingFileAlternate" Version="2.0.9" />
+    <PackageReference Include="Pocket.Disposable" Version="1.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Pocket.TypeDiscovery" Version="0.5.0">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="PocketLogger" Version="0.4.0">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="PocketLogger.For.ApplicationInsights" Version="0.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="PocketLogger.Subscribe" Version="0.7.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.DotNet.Interactive" Version="1.0.0-beta.21155.3" />
+    <PackageReference Include="Microsoft.DotNet.Interactive.CSharp" Version="1.0.0-beta.21155.3" />
+    <PackageReference Include="Microsoft.DotNet.Interactive.Http" Version="1.0.0-beta.21155.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PiTop.MakerArchitecture.Expansion.Rover\PiTop.MakerArchitecture.Expansion.Rover.csproj" />
+  </ItemGroup>
+
+
+</Project>
