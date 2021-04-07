@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="pi-top" Version="1.0.393" />
+    <PackageReference Include="pi-top" Version="1.0.395" />
     <PackageReference Include="pi-top.Camera" Version="1.0.376" />
     <PackageReference Include="PocketLogger" Version="0.4.1">
       <PrivateAssets>all</PrivateAssets>
