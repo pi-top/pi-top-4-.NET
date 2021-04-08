@@ -12,8 +12,8 @@
     <PackageReference Include="FluentAssertions" Version="5.10.3" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.1" />
     <PackageReference Include="Microsoft.Reactive.Testing" Version="5.0.0" />
-    <PackageReference Include="pi-top" Version="1.0.395" />
-    <PackageReference Include="pi-top.MakerArchitecture.Expansion" Version="1.0.395" />
+    <PackageReference Include="pi-top" Version="1.0.400" />
+    <PackageReference Include="pi-top.MakerArchitecture.Expansion" Version="1.0.400" />
     <PackageReference Include="PocketLogger" Version="0.4.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
