@@ -17,8 +17,8 @@
   <ItemGroup>
     <PackageReference Include="lobe.ImageSharp" Version="1.0.25" />
     <PackageReference Include="lobe.Onnx" Version="1.0.25" />
-    <PackageReference Include="pi-top" Version="1.0.395" />
-    <PackageReference Include="pi-top.Camera" Version="1.0.376" />
+    <PackageReference Include="pi-top" Version="1.0.400" />
+    <PackageReference Include="pi-top.Camera" Version="1.0.400" />
     <PackageReference Include="PocketLogger.Subscribe" Version="0.7.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

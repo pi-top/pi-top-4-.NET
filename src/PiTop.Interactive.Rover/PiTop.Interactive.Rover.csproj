@@ -8,13 +8,13 @@
     <PackageReference Include="lobe.Http" Version="1.0.25" />
     <PackageReference Include="lobe.ImageSharp" Version="1.0.25" />
     <PackageReference Include="lobe.Onnx" Version="1.0.25" />
-    <PackageReference Include="pi-top" Version="1.0.395" />
-    <PackageReference Include="pi-top.Camera" Version="1.0.376" />
-    <PackageReference Include="pi-top.Camera.DotNet.Interactive" Version="1.0.0" />
-    <PackageReference Include="pi-top.DotNet.Interactive" Version="1.0.395" />
-    <PackageReference Include="pi-top.MakerArchitecture.Expansion" Version="1.0.395" />
-    <PackageReference Include="pi-top.MakerArchitecture.Expansion.DotNet.Interactive" Version="1.0.395" />
-    <PackageReference Include="pi-top.MakerArchitecture.Foundation.DotNet.Interactive" Version="1.0.395" />
+    <PackageReference Include="pi-top" Version="1.0.400" />
+    <PackageReference Include="pi-top.Camera" Version="1.0.400" />
+    <PackageReference Include="pi-top.Camera.DotNet.Interactive" Version="1.0.400" />
+    <PackageReference Include="pi-top.DotNet.Interactive" Version="1.0.400" />
+    <PackageReference Include="pi-top.MakerArchitecture.Expansion" Version="1.0.400" />
+    <PackageReference Include="pi-top.MakerArchitecture.Expansion.DotNet.Interactive" Version="1.0.400" />
+    <PackageReference Include="pi-top.MakerArchitecture.Foundation.DotNet.Interactive" Version="1.0.400" />
     <PackageReference Include="Serilog.Sinks.RollingFileAlternate" Version="2.0.9" />
     <PackageReference Include="Pocket.Disposable" Version="1.1.0">
       <PrivateAssets>all</PrivateAssets>
