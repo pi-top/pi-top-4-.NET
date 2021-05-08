@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="OpenCvSharp4.runtime.linux-arm" Version="4.5.2.20210507" />
     <PackageReference Include="pi-top" Version="1.0.400" />
     <PackageReference Include="pi-top.Camera" Version="1.0.400" />
     <PackageReference Include="PocketLogger" Version="0.4.1">

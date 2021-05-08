@@ -18,6 +18,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="OpenCvSharp4.runtime.linux-arm" Version="4.5.2.20210507" />
   </ItemGroup>
 
   <ItemGroup>
