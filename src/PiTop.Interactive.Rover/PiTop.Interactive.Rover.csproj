@@ -37,6 +37,7 @@
     <PackageReference Include="Microsoft.DotNet.Interactive" Version="1.0.0-beta.21181.2" />
     <PackageReference Include="Microsoft.DotNet.Interactive.CSharp" Version="1.0.0-beta.21181.2" />
     <PackageReference Include="Microsoft.DotNet.Interactive.Http" Version="1.0.0-beta.21181.2" />
+    <PackageReference Include="OpenCvSharp4.runtime.linux-arm" Version="4.5.2.20210507" />
   </ItemGroup>
 
   <ItemGroup>
