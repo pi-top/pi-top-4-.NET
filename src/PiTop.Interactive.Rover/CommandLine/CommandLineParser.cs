@@ -138,7 +138,7 @@ namespace PiTop.Interactive.Rover.CommandLine
                     {
                         var frontendEnvironment = new BrowserFrontendEnvironment();
                         var kernel = CreateKernel(frontendEnvironment, startupOptions);
-                        kernel.UseQuitCommand(disposeOnQuit, cancellationToken);
+                        kernel.UseQuitCommand();
                         services.AddKernel(kernel);
 
                         var kernelServer = kernel.CreateKernelServer(startupOptions.WorkingDir);

@@ -5,9 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="pi-top" Version="1.0.400" />
-    <PackageReference Include="pi-top.Camera" Version="1.0.400" />
-    <PackageReference Include="pi-top.MakerArchitecture.Expansion" Version="1.0.400" />
+    <PackageReference Include="pi-top" Version="1.0.402" />
+    <PackageReference Include="pi-top.Camera" Version="1.0.402" />
+    <PackageReference Include="pi-top.MakerArchitecture.Expansion" Version="1.0.402" />
     <PackageReference Include="PocketLogger" Version="0.4.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

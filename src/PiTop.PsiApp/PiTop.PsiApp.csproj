@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -7,10 +7,10 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Psi.Runtime" Version="0.14.35.3-beta" />
-    <PackageReference Include="pi-top" Version="1.0.400" />
-    <PackageReference Include="pi-top.Camera" Version="1.0.400" />
-    <PackageReference Include="pi-top.MakerArchitecture.Foundation" Version="1.0.400" />
-    <PackageReference Include="pi-top.MakerArchitecture.Foundation.Psi" Version="1.0.400" />
+    <PackageReference Include="pi-top" Version="1.0.402" />
+    <PackageReference Include="pi-top.Camera" Version="1.0.402" />
+    <PackageReference Include="pi-top.MakerArchitecture.Foundation" Version="1.0.402" />
+    <PackageReference Include="pi-top.MakerArchitecture.Foundation.Psi" Version="1.0.402" />
     <PackageReference Include="PocketLogger.Subscribe" Version="0.7.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

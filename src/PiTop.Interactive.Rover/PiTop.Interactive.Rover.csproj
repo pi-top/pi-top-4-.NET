@@ -8,13 +8,13 @@
     <PackageReference Include="lobe.Http" Version="1.0.25" />
     <PackageReference Include="lobe.ImageSharp" Version="1.0.25" />
     <PackageReference Include="lobe.Onnx" Version="1.0.25" />
-    <PackageReference Include="pi-top" Version="1.0.400" />
-    <PackageReference Include="pi-top.Camera" Version="1.0.400" />
-    <PackageReference Include="pi-top.Camera.DotNet.Interactive" Version="1.0.400" />
-    <PackageReference Include="pi-top.DotNet.Interactive" Version="1.0.400" />
-    <PackageReference Include="pi-top.MakerArchitecture.Expansion" Version="1.0.400" />
-    <PackageReference Include="pi-top.MakerArchitecture.Expansion.DotNet.Interactive" Version="1.0.400" />
-    <PackageReference Include="pi-top.MakerArchitecture.Foundation.DotNet.Interactive" Version="1.0.400" />
+    <PackageReference Include="pi-top" Version="1.0.402" />
+    <PackageReference Include="pi-top.Camera" Version="1.0.402" />
+    <PackageReference Include="pi-top.Camera.DotNet.Interactive" Version="1.0.402" />
+    <PackageReference Include="pi-top.DotNet.Interactive" Version="1.0.402" />
+    <PackageReference Include="pi-top.MakerArchitecture.Expansion" Version="1.0.402" />
+    <PackageReference Include="pi-top.MakerArchitecture.Expansion.DotNet.Interactive" Version="1.0.402" />
+    <PackageReference Include="pi-top.MakerArchitecture.Foundation.DotNet.Interactive" Version="1.0.402" />
     <PackageReference Include="Serilog.Sinks.RollingFileAlternate" Version="2.0.9" />
     <PackageReference Include="Pocket.Disposable" Version="1.1.0">
       <PrivateAssets>all</PrivateAssets>
@@ -34,9 +34,9 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.DotNet.Interactive" Version="1.0.0-beta.21181.2" />
-    <PackageReference Include="Microsoft.DotNet.Interactive.CSharp" Version="1.0.0-beta.21181.2" />
-    <PackageReference Include="Microsoft.DotNet.Interactive.Http" Version="1.0.0-beta.21181.2" />
+    <PackageReference Include="Microsoft.DotNet.Interactive" Version="1.0.0-beta.21255.3" />
+    <PackageReference Include="Microsoft.DotNet.Interactive.CSharp" Version="1.0.0-beta.21255.3" />
+    <PackageReference Include="Microsoft.DotNet.Interactive.Http" Version="1.0.0-beta.21255.3" />
     <PackageReference Include="OpenCvSharp4.runtime.linux-arm" Version="4.5.2.20210507" />
   </ItemGroup>
 
