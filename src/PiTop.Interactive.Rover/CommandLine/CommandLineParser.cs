@@ -6,7 +6,6 @@ using System;
 using System.CommandLine;
 using System.CommandLine.Builder;
 using System.CommandLine.Invocation;
-using System.CommandLine.IO;
 using System.CommandLine.Parsing;
 using System.IO;
 using System.Text;
@@ -142,7 +141,7 @@ namespace PiTop.Interactive.Rover.CommandLine
                         services.AddKernel(kernel);
 
                         var kernelServer = kernel.CreateKernelServer(startupOptions.WorkingDir);
-                        kernelServer.Start();
+                        kernelServer.RunAsync();
                         
                         onServerStarted ??= () =>
                         {
@@ -155,28 +154,6 @@ namespace PiTop.Interactive.Rover.CommandLine
                 return httpCommand;
             }
 
-        }
-
-        private static KernelServer CreateKernelServer(this Kernel kernel, DirectoryInfo workingDir)
-        {
-            Console.InputEncoding = Encoding.UTF8;
-            Console.OutputEncoding = Encoding.UTF8;
-            return kernel.CreateKernelServer(Console.In, Console.Out, workingDir);
-        }
-
-        public static KernelServer CreateKernelServer(this Kernel kernel, TextReader inputStream, TextWriter outputStream, DirectoryInfo workingDir)
-        {
-            if (kernel == null)
-            {
-                throw new ArgumentNullException(nameof(kernel));
-            }
-
-            var input = new TextReaderInputStream(inputStream);
-            var output = new TextWriterOutputStream(outputStream);
-            var kernelServer = new KernelServer(kernel, input, output, workingDir);
-
-            kernel.RegisterForDisposal(kernelServer);
-            return kernelServer;
         }
 
 
@@ -196,7 +173,7 @@ namespace PiTop.Interactive.Rover.CommandLine
                 .UseNugetDirective()
                 .UseKernelHelpers()
                 .UseWho()
-                .UseDotNetVariableSharing();
+                .UseValueSharing();
 
             compositeKernel.Add(
                 csharpKernel,

@@ -135,7 +135,7 @@ namespace SampleApp
                     plate.GetOrCreateLed(digitalPort);
                 }
 
-                var leds = plate.DigitalDevices.OfType<Led>().ToArray();
+                var leds = plate.ConnectedDevices.OfType<Led>().ToArray();
 
                 var buttonStream = Observable
                     .FromEventPattern<bool>(h => button.PressedChanged += h, h => button.PressedChanged -= h);
@@ -188,24 +188,21 @@ namespace SampleApp
                     .Interval(TimeSpan.FromSeconds(0.5))
                     .Subscribe(_ =>
                     {
-                        var distance = sensor.Distance.Value;
-
-
-                        switch (distance)
+                        switch (sensor.Distance.Value)
                         {
-                            case { } x when x > greenThreshold:
+                            case var x when x > greenThreshold:
                                 greenLed.On();
                                 yellowLed.Off();
                                 redLed.Off();
                                 break;
 
-                            case { } x when x < greenThreshold && x > yellowThreshold:
+                            case var x when x < greenThreshold && x > yellowThreshold:
                                 greenLed.Off();
                                 yellowLed.On();
                                 redLed.Off();
                                 break;
 
-                            case { } x when x < redThreshold:
+                            case var x when x < redThreshold:
                                 greenLed.Off();
                                 yellowLed.Off();
                                 redLed.On();
